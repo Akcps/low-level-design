@@ -139,7 +139,6 @@ public class VendingMachine {
 
     public boolean canDispenseChange(Coins[] coins, int index, int amount, List<Coins> result) {
         if (amount == 0) {
-            System.out.println("Result" + result);
             return true;
         }
 
@@ -154,7 +153,6 @@ public class VendingMachine {
             }
             result.remove(result.size() - 1);
         }
-        System.out.println("Not found");
         return false;
     }
 }
